@@ -1,0 +1,11 @@
+syntax = 'proto3';
+
+service Streamer {
+    rpc StreamMilestone (Empty) returns (stream Milestone) {}
+}
+
+message Empty {}
+
+message Milestone {
+    int64 volume = 1;
+}

@@ -4,7 +4,10 @@ An example of using improbable's grpc web js and ts packages/modules with their 
 
 ## Instructions
 
-1) cd client && npm i
+Client (angular app)
+1) cd ./client && npm i
 2) ng serve
-3) ../streamer && go mod tidy
-4) go run main.go 
+
+Server (go grpc server)
+1) cd ./streamer && go mod tidy
+2) go run main.go 
